@@ -67,3 +67,7 @@ footer {
 footer img {
     padding-inline-start: 1em;
 }
+
+footer span {
+    color: white;
+}
