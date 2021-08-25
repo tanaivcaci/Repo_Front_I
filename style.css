@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;  
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1, h2, h3, a {
+    letter-spacing: .2em;
+    color: rgb(98, 98, 98);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+header h2 {
+    font-size: 2em;
+}
+
+ul {
+    margin-block-start: 4em;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li a, footer a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2em;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    font-weight: bolder;
+}
+
+footer {
+    margin-block-start: 4em;
+}
