@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-    margin: 0;
+    margin: 2px;
 }
 
 body {
@@ -61,5 +61,18 @@ section.destacados a {
     color: #666666;
 }
 
+section article figure span {
+    color: #F0A83E;
+    font-weight: bold;
+}
 
+footer {
+    background-color: #3C2313;
+    color: white;
+}
+
+footer section.centrado p {
+    text-align: center;
+    background-color: #F0A83E;
+}
 
