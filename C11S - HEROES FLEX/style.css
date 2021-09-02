@@ -61,20 +61,19 @@ main {
 
 main section.perfil {
     border: 1px;
-    
+    margin: 32px;
+    width: 300px;
+
     /* C10A */
-    display: inline-block;
+    /* display: inline-block; */
 
     /* C11S */
-    align-self: auto;
-    
+    /* align-self: auto; */
     
     /* height: 193px; */
-    margin: 32px;
-    margin-top: 154px;
-    
+
+    /* margin-top: 154px; */ /* NO USAR MARGIN-TOP SI TENGO FLEX */
     /* position: absolute; */
-    width: 300px;
 }
 
 section.perfil div.fondo {
