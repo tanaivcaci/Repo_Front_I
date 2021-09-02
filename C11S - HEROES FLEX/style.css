@@ -72,7 +72,7 @@ main section.perfil {
     
     /* height: 193px; */
 
-    /* margin-top: 154px; */ /* NO USAR MARGIN-TOP SI TENGO FLEX */
+    /* margin-top: 154px; */ /* NO USAR MARGIN-TOP (margen del elemento) SI TENGO FLEX */
     /* position: absolute; */
 }
 
