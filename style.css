@@ -9,6 +9,7 @@ html, body {
 body {
     font-family: 'Montserrat', sans-serif;  
     text-align: center;
+    position: relative;
 }
 
 h1, h2, h3 {
@@ -46,5 +47,14 @@ ul li a:hover {
 }
 
 footer {
-    margin-block-start: 4em;
+
+    /* para que quede a la derecha a mitad del vh */
+    
+    /* position: fixed;
+    top: 300px;
+    right: 10px; */
+
+    margin-block-start: 10em;
+    
 }
+
