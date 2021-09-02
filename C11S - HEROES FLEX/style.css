@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    height: 1024px;
+    /* height: 1024px; */
     /* height: 100vh; */
     /* height: 100%; */
     position: relative;
@@ -56,7 +56,6 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-content: space-around;
 
 }
 
@@ -70,7 +69,7 @@ main section.perfil {
     align-self: auto;
     
     
-    height: 193px;
+    /* height: 193px; */
     margin: 32px;
     margin-top: 154px;
     
@@ -140,7 +139,7 @@ footer {
     font-size: 16px;
     height: 51px;
     margin-top: 70px;
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
