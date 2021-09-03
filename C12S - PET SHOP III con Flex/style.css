@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-    margin: 2px;
+    margin: 0;
+    padding: 0px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    
 }
 
 a {
@@ -13,6 +15,29 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+    
+}
+
+li {
+    padding: 5px;
+}
+
+nav,
+ul, 
+section.nav-setting,
+section.nav-principal nav,  
+section.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul, 
+section.nav-setting {
+    justify-content: space-around;
+}
 
 header section.nav-setting {
     background-color:black;
@@ -21,6 +46,17 @@ header section.nav-setting {
 
 header section.nav-principal {
     background-color: #F0A83E;
+    padding: 24px;
+}
+
+section.nav-principal nav {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+/* Espacio entre las patitas y las opciones del nav-princpal */
+section.nav-principal > nav > ul > li > img {
+    padding-right: 3px;
 }
 
 section.banner {
@@ -53,9 +89,6 @@ section.banner p {
     padding: 10px;
 }
 
-ul {
-    list-style: none;
-}
 
 section.destacados a {
     color: #666666;
