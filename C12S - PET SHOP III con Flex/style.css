@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    
+    color:#3C2313;
 }
 
 a {
@@ -24,11 +24,17 @@ li {
     padding: 5px;
 }
 
+
 nav,
 ul, 
 section.nav-setting,
 section.nav-principal nav,  
-section.banner {
+section.banner, 
+.destacados header, 
+.destacados article, 
+.destacados article figure,
+.formulario,
+.formulario form {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,12 +71,20 @@ section.banner {
     background-size: cover;
     height: 490px;
     text-align: center;
+
+    position: relative;
+    justify-content: flex-end;
 }
+
+
 
 section.banner h3 {
     background: white;
     font-size: 30px;
-    height: 54px;
+    /* height: 54px; ES MEJOR NO PONERLE EL ALTO*/
+    border-radius: 5px;
+    padding: 7px;
+    margin-right: 12px;
 
 }
 
@@ -90,14 +104,102 @@ section.banner p {
 }
 
 
+
+section.destacados article {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+
+
+
 section.destacados a {
     color: #666666;
+}
+
+
+.destacados header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vh;
+    line-height: 2em;
+}
+
+
+.destacados article figure {
+    flex-direction: column;
+    justify-content: center;
+}
+
+figcaption {
+    font-weight: bold;
 }
 
 section article figure span {
     color: #F0A83E;
     font-weight: bold;
 }
+
+
+/* inicio formulario */
+
+.formulario {
+    flex-direction: column;
+    padding: 3vh;
+}
+
+.formulario > h3 {
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.formulario form {
+    flex-direction: inherit;
+}
+
+
+
+.formulario form > div.botonesForm {
+    padding: 10px; 
+}
+
+input {
+    margin-bottom: 10px;
+    background-color: #3C2313;
+    width: 340px;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+}
+
+::placeholder {
+    padding-left: 14px;
+    color: white;
+    font-size: 9px;
+    line-height: 11px;
+}
+
+div.botonesForm > input {
+    width: 110px;
+    height: 34px; 
+    border: transparent;
+    margin-top: 15px;
+}
+
+#submit {
+    background-color: #F0A83E;
+}
+
+#reset {
+    background-color: #8A8787;
+}
+
+
+
+
+/* inicio footer */
 
 footer {
     background-color: #3C2313;
