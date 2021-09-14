@@ -97,11 +97,10 @@ button#botonMas {
     right: 10px;
     border: none;
     background-color: white;
+    cursor: pointer;
 }
 
-button#botonMas:hover{
 
-}
 
 main {
     /* C10A */
