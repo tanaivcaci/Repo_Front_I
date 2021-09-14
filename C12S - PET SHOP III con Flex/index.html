@@ -89,7 +89,12 @@
 
         <section class="formulario">
             <h3>Contactanos</h3>
-            <form action="">
+
+            <!-- La etiqueta <form></form> tiene dos atributos: action y method. 
+            Cada uno cumple un objetivo particular:
+            action define la ruta en donde se va a procesar la información capturada.
+            method define cómo se enviará la información. En la versión actual de HTML, hay solo dos valores posibles: GET y POST.-->
+            <form action="" method="">
 
                 <label for="nombreYapellido">
                     <input type="text" name="nombreYapellido" id="nombreYapellido" placeholder="Nombre y Apellido">
@@ -100,7 +105,7 @@
                 </label>
 
                 <label for="tel">
-                    <input type="number" name="tel" id="tel" placeholder="Teléfono">
+                    <input type="tel" name="tel" id="tel" placeholder="Teléfono">
                 </label>
 
 
