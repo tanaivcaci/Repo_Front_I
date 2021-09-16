@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/lentesTanaVerde.png">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="descuentos">Descuentos 20%</h2>
+    <header>
+        <img src="img/logoTienda.svg" alt="">
+        <h1>Nombre Tienda</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="formulario.html">Contacto</a></li>
+            <li><a href="#">Registrarme</a></li>
+            <li><a href="#">Ingresar</a></li>
+        </ul>
+    </nav>
+
+    <button id="botonMas"><img src="img/buttonMas.svg" alt=""></button>
+
+    <main>
+
+        <section class="formulario">
+
+            <div class="titulos">
+                <h2>Añadí tu super!</h2>
+                <p>Agregá tu personaje favorito completando las opciones</p>
+            </div>
+
+            
+            <form action="/registro" method="POST">
+                
+                <div class="preguntas">
+
+                <!-- nombre -->
+                <label for="nombre">*Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <!-- desplegable especie -->
+                <label for="especie">*Especie</label>
+                <select name="especie" id="especie">
+                    <option value="" selected disabled>Especie</option>
+                    <option value="especie1">Especie 1</option>
+                    <option value="especie2">Especie 2</option>
+                    <option value="especie3">Especie 3</option>
+                    <option value="especie4">Especie 4</option>
+                </select> 
+
+                <!-- fecha -->
+                <label for="fecha">Fecha</label>
+                <input type="date">
+
+                <!-- agregar foto -->
+                <label for="foto">Agregar foto</label>
+                <input type="file" name="foto" id="foto" accept=".jpg, .png">
+
+                <!-- descripcion -->
+                <textarea name="descripcion" id="descripcion" placeholder="Descripcion" cols="30" rows="10"></textarea>
+
+                <!-- poderes -->
+                <label for="poderes">Poderes</label>
+                <input type="checkbox" name="poderes" id="poderes" value="Volar">
+                <label for="">Volar</label>
+                <input type="checkbox" name="poderes" id="poderes" value="Superinteligencia">
+                <label for="">Superinteligencia</label>
+                <input type="checkbox" name="poderes" id="poderes" value="Vista de rayo láser">
+                <label for="">Vista de Rayo Láser</label>
+                <input type="checkbox" name="poderes" id="poderes" value="Billetera gorda">
+
+                <hr>
+
+                <!-- tipo de personaje -->
+                <label for="tipoPersonaje"></label>
+                <input type="radio" name="tipoPersonaje" value="Héroe / Heroina">
+                <label for="tipoPersonaje">Héroe / Heroina</label>
+                <input type="radio" name="tipoPersonaje" value="Héroe / Heroina">
+                <label for="tipoPersonaje">Villano / Villana</label>
+                
+            </div>
+
+                <!-- boton -->
+                <button>Añadir</button>
+
+            </form>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+
+</html>
