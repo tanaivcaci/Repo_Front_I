@@ -101,8 +101,9 @@ a#botonMas {
 }
 
 a#botonMas:hover {
-    background-image: url(./img/buttonMasOscuro.png);
+    background-image: url(./img/buttonMasOscuro.svg);
     background-color: transparent;
+    z-index: 10;
 }
 
 main {
