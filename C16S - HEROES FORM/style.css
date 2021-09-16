@@ -90,13 +90,19 @@ nav ul li a{
 }
 
 
-button#botonMas {
+a#botonMas {
+    display: block;
     position: fixed;
     top: 50vh;
     right: 10px;
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+a#botonMas:hover {
+    background-image: url(./img/buttonMasOscuro.png);
+    background-color: transparent;
 }
 
 main {
