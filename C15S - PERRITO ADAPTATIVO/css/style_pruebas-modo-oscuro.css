@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
 :root {
     --bg-page: #FFF;
     --text-page: #000;
@@ -8,6 +11,7 @@
      padding: 0;
 }
 body{
+     font-family: 'Inter', sans-serif;
      color: var(--text-page);
      background-color: var(--bg-page);
      max-width: 90%;
@@ -17,16 +21,31 @@ body{
      justify-content: space-between;
      gap: 20px;
 }
+
+
+
 hr{
     margin: 20px 0;
     background-color: var(--text-page);
 }
+
+span {
+    font-weight: bolder;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
 picture{
     align-self: center;
 }
+
 picture img{
      border: 2px solid var(--text-page);
 }
+
+
 
 @media(prefers-color-scheme: dark){
     :root {
