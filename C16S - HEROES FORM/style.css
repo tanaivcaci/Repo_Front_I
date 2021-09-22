@@ -326,6 +326,18 @@ footer p {
 
 @media screen and (max-width: 768px){
 
+    a#botonMas {
+        filter: hue-rotate(50deg);
+    }
+
+    a#botonMas img{
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top: 10vh;
+        right: 5px;
+    }
+
     section.formulario > div.titulos p {
         line-height: 2rem;
     }
@@ -353,8 +365,12 @@ footer p {
     }
 
     form > button {
+        position: relative;
+        top: auto;
+        left: 138px;
         width: 40%;
         font-size: 2rem;
         font-weight: bold;
+        margin: 10px auto;
     }
 }
