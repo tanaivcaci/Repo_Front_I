@@ -91,6 +91,9 @@ nav ul li a{
 
 
 a#botonMas {
+    /* background-image: url(./img/buttonMas.svg); */
+    width: 82px;
+    height: 82px;
     display: block;
     position: fixed;
     top: 50vh;
@@ -101,9 +104,10 @@ a#botonMas {
 }
 
 a#botonMas:hover {
-    background-image: url(./img/buttonMasOscuro.svg);
+    filter: hue-rotate(50deg);
+    /* background-image: url(./img/buttonMasOscuro.svg);
     background-color: transparent;
-    z-index: 10;
+    z-index: 10; */
 }
 
 main {
@@ -190,6 +194,10 @@ section.perfil div.descripcion button {
 
 /* FORMULARIO */
 
+section.formulario form {
+    position: relative;
+}
+
 section.formulario {
     font-family: 'Inter', sans-serif;
     background-color: var(--color-cabecera);
@@ -218,6 +226,84 @@ section.formulario > div.titulos p {
     font-size: 20px;
     font-weight: 300;
     line-height: 14px;
+}
+
+
+div.preguntas,
+div.preguntasLeft, 
+div.preguntasRight {
+    display: flex;    
+}
+
+div.preguntas {    
+    justify-content: space-around;
+    gap: 15px;
+}
+
+div.preguntasLeft, 
+div.preguntasRight {
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.preguntasLeft input, 
+select {
+    width: 343px;
+    height: 63px;
+    border-radius: 15px;
+    border-color: transparent;
+    
+}
+
+textarea {
+    width: 343px;
+    height: 307px;
+    border-radius: 15px;
+    resize: none;
+  }
+
+::placeholder {
+    padding: 15px;
+}
+
+
+#foto[type=file] {
+    color: lightgray;
+}
+
+input[type=date]{
+    color: grey;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.radioYCheck ul{
+    display: block;
+    padding-bottom: 10px;
+}
+
+
+form > button {
+    position: absolute;
+    top: 603px;
+    left: 244px;
+    background-color: #1CD1B0;
+    width: 466px;
+    height: 87px;
+    border-radius: 24px;
+    border-color: transparent;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 

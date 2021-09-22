@@ -24,7 +24,9 @@
         </ul>
     </nav>
 
-    <a href="formulario.html" id="botonMas"><img src="./img/buttonMas.svg" alt=""></a>
+    <a href="formulario.html" id="botonMas">
+        <img src="./img/buttonMas.svg" alt="">
+    </a>
 
     <main>
 
@@ -35,56 +37,87 @@
                 <p>Agregá tu personaje favorito completando las opciones</p>
             </div>
 
-            
+
             <form action="/registro" method="POST" enctype="multipart/form-data">
-                
+
                 <div class="preguntas">
+                    <div class="preguntasLeft">
 
-                <!-- nombre -->
-                <label for="nombre">*Nombre</label>
-                <input type="text" name="nombre" id="nombre">
+                        <!-- nombre -->
+                        <label for="nombre">*Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
 
-                <!-- desplegable especie -->
-                <label for="especie">*Especie</label>
-                <select name="especie" id="especie">
-                    <option value="" selected disabled>Especie</option>
-                    <option value="especie1">Especie 1</option>
-                    <option value="especie2">Especie 2</option>
-                    <option value="especie3">Especie 3</option>
-                    <option value="especie4">Especie 4</option>
-                </select> 
+                        <!-- fecha -->
+                        <label for="fecha">Fecha</label>
+                        <input type="date">
 
-                <!-- fecha -->
-                <label for="fecha">Fecha</label>
-                <input type="date">
+                        <!-- descripcion -->
+                        <textarea name="descripcion" id="descripcion" placeholder="Descripcion" cols="30"
+                            rows="10"></textarea>
+                    </div>
 
-                <!-- agregar foto -->
-                <label for="foto">Agregar foto</label>
-                <input type="file" name="foto" id="foto" accept=".jpg, .png">
+                    <div class="preguntasRight">
 
-                <!-- descripcion -->
-                <textarea name="descripcion" id="descripcion" placeholder="Descripcion" cols="30" rows="10"></textarea>
+                        <!-- desplegable especie -->
+                        <label for="especie">*Especie</label>
+                        <select name="especie" id="especie">
+                            <option value="" selected disabled>Especie</option>
+                            <option value="especie1">Especie 1</option>
+                            <option value="especie2">Especie 2</option>
+                            <option value="especie3">Especie 3</option>
+                            <option value="especie4">Especie 4</option>
+                        </select>
 
-                <!-- poderes -->
-                <label for="poderes">Poderes</label>
-                <input type="checkbox" name="poderes" id="poderes" value="Volar">
-                <label for="">Volar</label>
-                <input type="checkbox" name="poderes" id="poderes" value="Superinteligencia">
-                <label for="">Superinteligencia</label>
-                <input type="checkbox" name="poderes" id="poderes" value="Vista de rayo láser">
-                <label for="">Vista de Rayo Láser</label>
-                <input type="checkbox" name="poderes" id="poderes" value="Billetera gorda">
+                        <!-- agregar foto -->
+                        <label for="foto">Agregar foto</label>
+                        <input type="file" name="foto" id="foto" accept=".jpg, .png">
 
-                <hr>
+                        <!-- poderes -->
+                        <label for="poderes">Poderes</label>
+                        <div class="radioYCheck">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="poderes" id="poderes" value="Volar">
+                                    <label for="">Volar</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="poderes" id="poderes" value="Superinteligencia">
+                                    <label for="">Superinteligencia</label>
+                                </li>
+                                <li>
 
-                <!-- tipo de personaje -->
-                <label for="tipoPersonaje"></label>
-                <input type="radio" name="tipoPersonaje" value="Héroe / Heroina">
-                <label for="tipoPersonaje">Héroe / Heroina</label>
-                <input type="radio" name="tipoPersonaje" value="Héroe / Heroina">
-                <label for="tipoPersonaje">Villano / Villana</label>
-                
-            </div>
+                                    <input type="checkbox" name="poderes" id="poderes" value="Vista de rayo láser">
+                                    <label for="">Vista de Rayo Láser</label>
+
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="poderes" id="poderes" value="Billetera gorda">
+                                    <label for="">Billetera Gorda</label>
+
+                                </li>
+                            </ul>
+
+                            <hr>
+                        </div>
+
+                        <!-- tipo de personaje -->
+                        <label for="tipoPersonaje">Tipo de Personaje</label>
+                        <div class="radioYCheck">
+                            <ul>
+                                <li>
+                                    <input type="radio" name="tipoPersonaje" value="Héroe / Heroina">
+                                    <label for="tipoPersonaje">Héroe / Heroina</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="tipoPersonaje" value="Héroe / Heroina">
+                                    <label for="tipoPersonaje">Villano / Villana</label>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
 
                 <!-- boton -->
                 <button>Añadir</button>

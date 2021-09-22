@@ -1,0 +1,33 @@
+HTML básico
+- ¿Qué significa HTML? ¿Qué es HTML? ¿Es un lenguaje de marcado? de estilos? de programación?
+- ¿cual es la estructura de un archivo html? ¿importa el orden de los link? 
+- ¿Qué son las etiquetas?¿que es la semántica? ¿todas las etiquetas son semánticas?¿cual es la estructura de una etiqueta? 
+- ¿cual es la estructura de un menú de navegación? que etiquetas usamos?
+- ¿Que son elementos de linea y bloque? en que se diferencian? Ejemplos.
+- Repasar las etiquetas vistas (listas, links, img, etc)
+- Repasar rutas avsolutas y relativas. 
+- ¿que es accesibilidad?
+Formulario: Repasar
+- action, method
+- inputs(text, radio, checkbox, etc), select, button, fieldset, optgroup
+- atributos: id, name, placeholder, required, disable, validate, ...
+CSS básico:
+- ¿Qué significa CSS? ¿Para qué sirven las hojas de estilo?
+- Definir y pensar ejemplos de cascada y especificidad. Agrupación, jerarquía. 
+- Selectores y pseudoselectores (spesudo clases y pseudo elemntos): ¿como se usan?, ¿que represenan los mas comunes?
+- ¿que tipos de fuentes hay?¿Como cargamos fuentes de terceros?¿como asignamos una fuente?¿en que caso usamos comillas al asignar una fuente?
+- ¿como incluimos iconos?
+- ¿como asignamos colores? ¿que formatos de colores son admitidos? 
+- ¿Cómo poner fondo a un elemento en CSS?
+Box Model: 
+- ¿Que hace cada una de las positioms vistas (relative, absolute, fixed, stiky?¿necesitan algún datos adicional?
+- ¿que hace z-index?
+- Repasar paddin, margin, border. Metodos abreviados
+- Para que sirvien las propiedades visibility y display. ¿Cuando nos conviene usar cada una?
+Flex. Repasar. Ej: si flex-direction es row ¿que hace aling-item?
+Responsive: 
+- Estrategias (Mobile Firts y Mobile Last)
+- Media queries (max-width, min-width, orientatio)
+- Medidas absolutas y relativas (px, %, em, rem)
+Transform, transition, animation.
+Revisen y vean en que tienen mas dudas así mañana aprovechamos la clase para repasarlo juntos :nerd:
