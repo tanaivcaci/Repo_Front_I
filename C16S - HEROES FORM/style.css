@@ -204,10 +204,8 @@ section.formulario {
   background-color: var(--color-cabecera);
   border-radius: 50px;
   box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.3);
-
   height: 832px;
   width: 954px;
-
   margin-top: 10vh;
 }
 
@@ -323,4 +321,40 @@ footer {
 footer p {
   padding: 16px;
   text-align: center;
+}
+
+
+@media screen and (max-width: 768px){
+
+    section.formulario > div.titulos p {
+        line-height: 2rem;
+    }
+
+    section.formulario {
+        height: fit-content;
+    }
+
+    div.preguntas {
+        flex-direction: column;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    div.preguntasLeft,
+    div.preguntasRight {
+
+      align-items: center;
+      gap: 25px;
+    }
+
+    .preguntasLeft > label,
+    .preguntasRight > label {
+        font-weight: bold;
+    }
+
+    form > button {
+        width: 40%;
+        font-size: 2rem;
+        font-weight: bold;
+    }
 }
