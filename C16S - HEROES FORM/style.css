@@ -235,6 +235,7 @@ div.preguntasRight {
 
 div.preguntas {
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -261,6 +262,11 @@ select {
   border-color: transparent;
 }
 
+select{
+  padding-left: 15px;
+  color: grey;
+}
+
 textarea {
   width: 343px;
   height: 307px;
@@ -268,8 +274,15 @@ textarea {
   resize: none;
 }
 
+
+textarea:focus {
+  padding-right: 1rem;
+  padding-top: 1rem;
+  color: var(--color-cabecera);
+}
+
 ::placeholder {
-  padding: 15px;
+  padding-left: .5rem;
 }
 
 #foto[type="file"] {
@@ -346,10 +359,16 @@ footer p {
         height: fit-content;
     }
 
+    /* 
+    Dejo comentada esta regla porque se soluciona con flex-wrap: wrap EN .preguntas
     div.preguntas {
         flex-direction: column;
         justify-content: center;
         height: fit-content;
+    } */
+
+    .formulario {
+      border: .5em solid #f3f3f3;
     }
 
     div.preguntasLeft,

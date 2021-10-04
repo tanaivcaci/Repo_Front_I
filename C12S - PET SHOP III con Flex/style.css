@@ -3,11 +3,16 @@
 * {
     margin: 0;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color:#3C2313;
+}
+
+h1 {
+    display: none;
 }
 
 a {
@@ -158,7 +163,6 @@ section article figure span {
 .formulario form {
     flex-direction: inherit;
 }
-
 
 
 .formulario form > div.botonesForm {
