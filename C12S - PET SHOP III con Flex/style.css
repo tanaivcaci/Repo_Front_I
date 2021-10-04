@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --color-enfatizar: #F0A83E;
+    --color-bg-oscuro: #3C2313;
+  }
+
 * {
     margin: 0;
     padding: 0px;
@@ -8,7 +13,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color:#3C2313;
+    color: var(--color-bg-oscuro);
 }
 
 h1 {
@@ -56,7 +61,7 @@ header section.nav-setting {
 }
 
 header section.nav-principal {
-    background-color: #F0A83E;
+    background-color: var(--color-enfatizar);
     padding: 24px;
 }
 
@@ -72,7 +77,7 @@ section.nav-principal > nav > ul > li > img {
 
 section.banner {
     background-image: url('./images/bowl-and-pet-daities-on-green-background 1.png');
-    color: #3C2313;
+    color: var(--color-bg-oscuro);
     background-size: cover;
     height: 490px;
     text-align: center;
@@ -138,10 +143,12 @@ section.destacados a {
 
 figcaption {
     font-weight: bold;
+    font-size: 10px;
+    color: #8A8787;
 }
 
 section article figure span {
-    color: #F0A83E;
+    color: var(--color-enfatizar);
     font-weight: bold;
 }
 
@@ -171,15 +178,19 @@ section article figure span {
 
 input {
     margin-bottom: 10px;
-    background-color: #3C2313;
+    background-color: var(--color-bg-oscuro);
     width: 340px;
     height: 40px;
     border-radius: 15px;
     color: white;
 }
 
+input:focus, 
 ::placeholder {
     padding-left: 14px;
+}
+
+::placeholder {
     color: white;
     font-size: 9px;
     line-height: 11px;
@@ -193,7 +204,7 @@ div.botonesForm > input {
 }
 
 #submit {
-    background-color: #F0A83E;
+    background-color: var(--color-enfatizar);
 }
 
 #reset {
@@ -203,15 +214,102 @@ div.botonesForm > input {
 
 
 
-/* inicio footer */
+/* INICIO FOOTER */
+
+/* form-suscripcion*/
+
+.form-suscripcion-cabecera,
+.form-suscripcion h3, 
+.form-suscripcion form {
+    display: inline-block;
+}
+
+.form-suscripcion-cabecera,
+.form-suscripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-enfatizar);
+    height: 60px;
+    padding-right: 2em;
+}
+
+.form-suscripcion form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+}
+
+
+
+.form-suscripcion-cabecera img {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.form-suscripcion input{
+    color: grey;
+    background-color: white;
+    border-color: transparent;
+}
+
+::placeholder {
+    color: grey;
+}
+
+/* CÓMO HAGO PARA ALINEAR BIEN EL LABEL */
+.form-suscripcion form label {
+    display: flex;
+    align-items: center;
+    padding-top: .5em;
+}
+
+.form-suscripcion input#suscribe {
+    background-color: var(--color-bg-oscuro);
+    height: 34px;
+    width: 90px;
+    color: white;
+    font-size: 9px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+/* Footer fondo oscuro -  INFO */
 
 footer {
-    background-color: #3C2313;
+    background-color: var(--color-bg-oscuro);
     color: white;
 }
 
-footer section.centrado p {
+footer > section.centrado > p {
     text-align: center;
-    background-color: #F0A83E;
+    background-color: #222222;
+    padding: .7rem;
 }
 
+footer > section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer section figure {
+    display: flex;
+    padding-top: 1.5rem;
+    padding-left: 5rem;
+}
+
+footer section figure img{
+    padding-right: 1.5rem;
+}
+
+section:nth-child(2) > div.footer-contacto > figure:nth-child(3) > img {
+    padding-bottom: 1.5rem;
+}
+
+
+footer > section:nth-child(2) > div.logo-footer {
+    display: inline-block;
+    padding-right: 5rem;
+}
