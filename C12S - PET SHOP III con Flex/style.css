@@ -1,315 +1,343 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
-    --color-enfatizar: #F0A83E;
-    --color-bg-oscuro: #3C2313;
-  }
+  --color-enfatizar: #f0a83e;
+  --color-bg-oscuro: #3c2313;
+}
 
 * {
-    margin: 0;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--color-bg-oscuro);
+  font-family: "Roboto", sans-serif;
+  color: var(--color-bg-oscuro);
 }
 
 h1 {
-    display: none;
+  display: none;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
-    
+  list-style: none;
 }
 
 li {
-    padding: 5px;
+  padding: 5px;
 }
 
-
 nav,
-ul, 
+ul,
 section.nav-setting,
-section.nav-principal nav,  
-section.banner, 
-.destacados header, 
-.destacados article, 
+section.nav-principal nav,
+section.banner,
+.destacados header,
+.destacados article,
 .destacados article figure,
 .formulario,
 .formulario form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-ul, 
+ul,
 section.nav-setting {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 header section.nav-setting {
-    background-color:black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 header section.nav-principal {
-    background-color: var(--color-enfatizar);
-    padding: 24px;
+  background-color: var(--color-enfatizar);
+  padding: 24px;
 }
 
 section.nav-principal nav {
-    justify-content: space-around;
-    flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 
 /* Espacio entre las patitas y las opciones del nav-princpal */
 section.nav-principal > nav > ul > li > img {
-    padding-right: 3px;
+  padding-right: 3px;
+}
+
+img#menu {
+  display: none;
 }
 
 section.banner {
-    background-image: url('./images/bowl-and-pet-daities-on-green-background 1.png');
-    color: var(--color-bg-oscuro);
-    background-size: cover;
-    height: 490px;
-    text-align: center;
+  background-image: url("./images/bowl-and-pet-daities-on-green-background 1.png");
+  color: var(--color-bg-oscuro);
+  background-size: cover;
+  height: 490px;
+  text-align: center;
 
-    position: relative;
-    justify-content: flex-end;
+  position: relative;
+  justify-content: flex-end;
 }
 
-
-
 section.banner h3 {
-    background: white;
-    font-size: 30px;
-    /* height: 54px; ES MEJOR NO PONERLE EL ALTO*/
-    border-radius: 5px;
-    padding: 7px;
-    margin-right: 12px;
-
+  background: white;
+  font-size: 30px;
+  /* height: 54px; ES MEJOR NO PONERLE EL ALTO*/
+  border-radius: 5px;
+  padding: 7px;
+  margin-right: 12px;
 }
 
 section.banner button {
-    background: #F0A83E;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 7px;
-    text-transform: uppercase;
-    cursor: pointer;
+  background: #f0a83e;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 7px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 section.banner p {
-    font-size: 16px;
-    padding: 10px;
+  font-size: 16px;
+  padding: 10px;
 }
-
-
 
 section.destacados article {
-    display: flex;
-    justify-content: center;
-    gap: 5vh;
+  display: flex;
+  justify-content: center;
+  gap: 5vh;
 }
-
-
 
 section.destacados a {
-    color: #666666;
+  color: #666666;
 }
-
 
 .destacados header {
-    flex-direction: column;
-    justify-content: center;
-    padding: 3vh;
-    line-height: 2em;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3vh;
+  line-height: 2em;
 }
 
-
 .destacados article figure {
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 figcaption {
-    font-weight: bold;
-    font-size: 10px;
-    color: #8A8787;
+  font-weight: bold;
+  font-size: 10px;
+  color: #8a8787;
 }
 
 section article figure span {
-    color: var(--color-enfatizar);
-    font-weight: bold;
+  color: var(--color-enfatizar);
+  font-weight: bold;
 }
-
 
 /* inicio formulario */
 
 .formulario {
-    flex-direction: column;
-    padding: 3vh;
+  flex-direction: column;
+  padding: 3vh;
 }
 
 .formulario > h3 {
-    font-size: 25px;
-    line-height: 29px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+  font-size: 25px;
+  line-height: 29px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .formulario form {
-    flex-direction: inherit;
+  flex-direction: inherit;
 }
 
-
 .formulario form > div.botonesForm {
-    padding: 10px; 
+  padding: 10px;
 }
 
 input {
-    margin-bottom: 10px;
-    background-color: var(--color-bg-oscuro);
-    width: 340px;
-    height: 40px;
-    border-radius: 15px;
-    color: white;
+  margin-bottom: 10px;
+  background-color: var(--color-bg-oscuro);
+  width: 340px;
+  height: 40px;
+  border-radius: 15px;
+  color: white;
 }
 
-input:focus, 
+input:focus,
 ::placeholder {
-    padding-left: 14px;
+  padding-left: 14px;
 }
 
 ::placeholder {
-    color: white;
-    font-size: 9px;
-    line-height: 11px;
+  color: white;
+  font-size: 9px;
+  line-height: 11px;
 }
 
 div.botonesForm > input {
-    width: 110px;
-    height: 34px; 
-    border: transparent;
-    margin-top: 15px;
+  width: 110px;
+  height: 34px;
+  border: transparent;
+  margin-top: 15px;
 }
 
 #submit {
-    background-color: var(--color-enfatizar);
+  background-color: var(--color-enfatizar);
 }
 
 #reset {
-    background-color: #8A8787;
+  background-color: #8a8787;
 }
-
-
-
 
 /* INICIO FOOTER */
 
 /* form-suscripcion*/
 
 .form-suscripcion-cabecera,
-.form-suscripcion h3, 
+.form-suscripcion h3,
 .form-suscripcion form {
-    display: inline-block;
+  display: inline-block;
 }
 
 .form-suscripcion-cabecera,
 .form-suscripcion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-enfatizar);
-    height: 60px;
-    padding-right: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-enfatizar);
+  height: 60px;
+  padding-right: 2em;
 }
 
 .form-suscripcion form {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
 }
-
-
 
 .form-suscripcion-cabecera img {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
-.form-suscripcion input{
-    color: grey;
-    background-color: white;
-    border-color: transparent;
+.form-suscripcion input {
+  color: grey;
+  background-color: white;
+  border-color: transparent;
 }
 
 ::placeholder {
-    color: grey;
+  color: grey;
 }
 
 /* CÓMO HAGO PARA ALINEAR BIEN EL LABEL */
 .form-suscripcion form label {
-    display: flex;
-    align-items: center;
-    padding-top: .5em;
+  display: flex;
+  align-items: center;
+  padding-top: 0.5em;
 }
 
 .form-suscripcion input#suscribe {
-    background-color: var(--color-bg-oscuro);
-    height: 34px;
-    width: 90px;
-    color: white;
-    font-size: 9px;
-    border-radius: 15px;
-    margin: auto;
+  background-color: var(--color-bg-oscuro);
+  height: 34px;
+  width: 90px;
+  color: white;
+  font-size: 9px;
+  border-radius: 15px;
+  margin: auto;
 }
 
 /* Footer fondo oscuro -  INFO */
 
 footer {
-    background-color: var(--color-bg-oscuro);
-    color: white;
+  background-color: var(--color-bg-oscuro);
+  color: white;
 }
 
 footer > section.centrado > p {
-    text-align: center;
-    background-color: #222222;
-    padding: .7rem;
+  text-align: center;
+  background-color: #222222;
+  padding: 0.7rem;
 }
 
 footer > section:nth-child(2) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer section figure {
-    display: flex;
-    padding-top: 1.5rem;
-    padding-left: 5rem;
+  display: flex;
+  padding-top: 1.5rem;
+  padding-left: 5rem;
 }
 
-footer section figure img{
-    padding-right: 1.5rem;
+footer section figure img {
+  padding-right: 1.5rem;
 }
 
 section:nth-child(2) > div.footer-contacto > figure:nth-child(3) > img {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-
 footer > section:nth-child(2) > div.logo-footer {
-    display: inline-block;
-    padding-right: 5rem;
+  display: inline-block;
+  padding-right: 5rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 630px) {
+
+  img#menu {
+    display: inline;
+  }
+
+  body > header > section.nav-principal > nav > ul {
+    display: none;
+  }
+
+  .destacados article,
+  .destacados article figure {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer > section:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer section figure {
+    padding-left: 0;
+  }
+
+  footer > section:nth-child(2) > div.logo-footer {
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+
+  .form-suscripcion {
+    height: 101px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input#correoSusc {
+    width: 261px;
+  }
 }
